@@ -12,7 +12,7 @@ def right():
     print("right")
 
 actions = {
-    259:    up,
+    curses.KEY_UP:    up,
     curses.KEY_DOWN:  backward,
     curses.KEY_LEFT:  left,
     curses.KEY_RIGHT: right

@@ -20,7 +20,7 @@ import paho.mqtt.subscribe as subscribe
 
 topics = ['#']
 
-m = subscribe.simple(topics, hostname="localhost", retained=False, msg_count=2)
+m = subscribe.simple(topics, hostname="192.168.1.46", retained=False, msg_count=2)
 for a in m:
     print(a.topic)
     print(a.payload)
